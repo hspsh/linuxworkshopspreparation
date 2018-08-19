@@ -1,0 +1,7 @@
+---
+# handlers file for roles/add_users
+
+- name: Restart sshd
+  systemd:
+    name: sshd
+    state: reloaded

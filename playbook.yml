@@ -1,0 +1,8 @@
+---
+
+- hosts: ubuntu_machine
+  become: true
+
+  roles:
+    - add_users
+...

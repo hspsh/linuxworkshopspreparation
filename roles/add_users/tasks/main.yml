@@ -1,0 +1,45 @@
+---
+# tasks file for roles/add_users
+#
+- name: Make sure we have a 'wheel' group
+  group:
+    name: wheel
+    state: present
+
+- name: Add the users from list
+  user:
+    state: present
+    name: "{{ item }}"
+    shell: /bin/bash
+    append: yes
+    groups: sudo, wheel
+    remove: yes
+    update_password: always
+    # qwerty
+    password: "$6$uNtnwo.M/YGdTiPm$u3j/UFEPFnHYdpCgwgKdMVKzd0stEuuKPDCenMZ3SD/aJV9E5wVq4/wKiq3hcHM5Ku6/x7clnM1/SSEBbJCDD/"
+    create_home: True
+    generate_ssh_key: True
+  with_items:
+    - "{{ users_list }}"
+
+- name: Ansible copy directory to the remote server
+  copy:
+    src: "/Users/proko/Desktop/linux-hs"
+    dest: "/home/{{ item }}"
+    owner: "{{ item }}"
+    group: "{{ item }}"
+    mode: 0644
+  with_items:
+    - "{{ users_list }}"
+
+- name: Adds sshd config
+  template:
+    src: etc/ssh/sshd_config
+    dest: /etc/ssh/sshd_config
+  notify: Restart sshd
+
+- name: Adds ssh config
+  template:
+    src: etc/ssh/ssh_config
+    dest: /etc/ssh/ssh_config
+  notify: Restart sshd
