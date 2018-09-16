@@ -1,0 +1,18 @@
+Standard File Streams
+
+Name	Symbolic Name	Value	Example
+standard input	stdin	0	keyboard
+standard output	stdout	1	terminal
+standard error	stderr	2	log file
+
+stdin
+do_something < input-file
+
+stdout
+do_something > output-file
+
+stderr
+do_something 2> error-file
+
+???
+wget -q -O - http://yourwebsite.com/wp-cron.php?doing_wp_cron > /dev/null 2>&1

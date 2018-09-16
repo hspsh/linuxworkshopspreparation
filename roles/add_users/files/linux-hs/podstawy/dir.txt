@@ -1,0 +1,22 @@
+# DIRECTORIES
+
+pwd      display path of a current working directory
+
+tree	 wyświetl strukturę katalogów
+
+cd       change directory
+
+cd ..    zmien katalog na rodzica
+
+Absolute pathname method: $ cd /usr/bin
+Relative pathname method:   $ cd ../../usr/bin	
+
+cd ~	 zmien katalog na swój home
+
+cd -	 zmień katalog na poprzednio użyty
+
+ls       list directory content
+
+ls -la   list all (również pliki ukryte)
+
+mkdir    make directory

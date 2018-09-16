@@ -1,0 +1,21 @@
+sudo
+
+
+The halt and poweroff commands issue shutdown -h to halt the system; reboot issues shutdown -r 
+
+which diff
+
+whereis diff
+
+pipe |
+
+grep 
+
+vim
+
+man
+
+help
+
+
+

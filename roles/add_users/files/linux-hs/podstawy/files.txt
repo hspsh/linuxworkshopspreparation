@@ -1,0 +1,16 @@
+# FILES
+
+rm <file>       usuń plik
+
+rm -r <dir>     usuń katalog
+
+rm -f <file>    force delete
+rm -rf <dir>    force delete katalogu
+
+mv <file-old> <file-new> zmień nazwę pliku
+
+mv <file> <dir>         przenieś plik do katalogu
+
+cp <file> <directory>   skopiuj plik do katalogu
+
+cp -r <directory1> <directory2> skopiuj katalog i jego zawartość

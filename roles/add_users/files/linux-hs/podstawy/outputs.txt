@@ -1,0 +1,15 @@
+# OUTPUT
+
+cat     wyświetl zawartość pliku
+
+less    wyświetl zawartość pliku korzystając z less, które ma paginację (kiedy plik nie mieście się w kilku linijkach)
+
+head    wyświetl n pierwszych linijek
+tail    wyświetl n ostatnich linijek
+
+<cmd> > <file>  przekieruj zawartość wyjścia komendy do pliku
+
+<cmd> >> <file> append/dodaj zawartość wyjścia komendy do pliku
+
+clear   wyczyść commandline
+ctr-l   to co powyżej

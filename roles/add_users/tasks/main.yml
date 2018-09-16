@@ -24,7 +24,7 @@
 
 - name: Ansible copy directory to the remote server
   copy:
-    src: "/Users/proko/Desktop/linux-hs"
+    src: "roles/add_users/files/linux-hs"
     dest: "/home/{{ item }}"
     owner: "{{ item }}"
     group: "{{ item }}"

@@ -1,0 +1,5 @@
+cd /proc
+
+ls -F
+
+sudo cat 3257/environ

@@ -1,0 +1,9 @@
+Soft and hard links
+
+ln file1 file2		Tworzy hard link file2 do pliku file1
+			If the real copy is deleted the link will work
+
+ls -li file1 file2	Możemy to sprawdzić
+
+ls -s file1 file2	Tworzy soft link
+			If the real copy is deleted, the link will not work

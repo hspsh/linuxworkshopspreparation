@@ -1,0 +1,7 @@
+# PROCESSES
+
+ps ax		wyświetl obecnie odpalone procesy
+
+top		wyświetl informacje na żywo o obecnie chodzących procesach
+
+kill <pid>	zabij proces o process id równym <pid>

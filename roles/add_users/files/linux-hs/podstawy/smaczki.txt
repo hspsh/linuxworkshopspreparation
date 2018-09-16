@@ -1,0 +1,29 @@
+# SMACZKI
+
+; 		średnik działa ;) można dzielić komendy do wykonania średnikiem
+
+&&		wykonaj kolejną jeśli poprzednia zakończyła się sukcesem (zwrócił kod 0 jeśli odniósł suksec)
+	częste użycie apt get update && apt get upgrade
+	zainstaluj aktualizacje jeśli udało Ci się pobrać updaty
+
+||	OR, jeśli pierwszy warunek zadziałał, drugi się nie wykona
+	Przykłady:
+	$ false || echo "Oops, fail"
+	Oops, fail
+
+	$ true || echo "Will not be printed"
+	$  
+
+CTR-A	przenosi kursor na początek lini
+CTR-E	przenosi kursor na koniec lini
+CTR-K	usuwa wszystkie znaki za kursorem
+CTR-U	usuwa wszystkie znaki przed kursorem
+CTR-L	czyści terminal podobnie do komendy clear
+CTR-C	przerywa obecnie działającą komendę
+
+history		komenda zwracająca historię wywołanych komend
+
+~	zastępuję home dir
+zamiast cd /home/userx/tajnyfolder/
+możemy napisać cd ~/tajnyfolder/
+

@@ -1,0 +1,45 @@
+open source
+
+GNU/Linux
+
+GNU - system i narzedzia systemowe
+Linux - kernel
+
+Kernel, init, services:
+* kernel		The boot loader loads both the kernel and an initial RAM–based file system (initramfs) into memory, so it can be used directly by the kernel.  
+
+* /sbin/init
+
+* Systemd
+sudo systemctl start/stop/restart fooservice
+sudo systemctl enable/disable fooservice
+
+
+Filesystem hierarchy standard
+Wszystko jest plikiem lub katalogiem
+/ katalog root
+/bin niezbedne binarki podstawowych komend np.cat, ls, cp
+/boot bootloader files
+/dev device files (specialne pliki, które są urządzeniami, ale udają pliki)
+	/dev/null - usuwa wszystkie dane do niego wysłane, ale raportuje suksec zapisu
+/etc statyczne configi, żadnych binarek
+/home katalogi uzytkownikow
+/lib biblioteki niezbędne dla binarek w /sbin i /bin
+/media punkty do montowania nośników danych typu CDROM *
+/mnt tymczasowo montowane filesystemy *
+/opt optional application packages
+/proc wirtualny system plików dający dostęp do informacji procesora i kernela jako plików. Dane w plikach są pobierane tylko kiedy ktoś chce je odczytać
+/root katalog home dla użytkownika root
+/sbin niezbędne binarki systemowe np. fsck (sprawdza integralnosc plikow), init (pierwszy program odpalany przez system PID=1)
+/run "early bird" /var/run miejsce dla daemonów systemowych do trzymania tymczasowych plików runtimu. /var/run jest zwykle dla daemonów 
+	odpalajacych się później niż sam /run, ale dziś /var/run często jest tylko symlinkiem do /run
+/srv teoretyczne miejsce dla danych serwowanych przez serwer. 
+/sys zawiera informacje o urządzeniach, driverach itp.
+/tmp katalog dla plików tymaczowych. Na niektórych dystrybucjach dane są trzymane w pamięci i znikają po reboocie. 
+	Trzeba wtedy uważać by pliki w /tmp nie zajmowały więcej niż RAM
+/usr Druga hierarchia danych tylko do odczytu. Zawiera większość narzędzi i aplikacji dla wielu użytkowników	
+	/usr/bin	binarki, które nie są niezbędne. Dostępne dla wszystkich użytkowników
+	/usr/lib	biblioteki potrzebne dla /usr/bin i /usr/sbin
+	/usr/sbin	binarki systemowe, które nie są niezbędne
+/var variables files. Pliki, których zawartość jest dynamiczna. Wciąż się zmienia w trakcie normalnego działania systemu np. logi
+

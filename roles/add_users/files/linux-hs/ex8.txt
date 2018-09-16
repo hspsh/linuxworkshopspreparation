@@ -1,0 +1,5 @@
+who			Obecnie zalogowani użytkownicy
+who -a
+
+whoami			Kim jestem
+

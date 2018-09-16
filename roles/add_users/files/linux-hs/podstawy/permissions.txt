@@ -1,0 +1,40 @@
+# PERMISSIONS
+
+notacja symboliczna
+
+r will be displayed if reading is permitted
+w will be displayed if writing is permitted
+x will be displayed if execution is permitted
+- will be displayed in the place of r, w, and x, if the respective permission is not pe
+
+Przykłady:
+-rwxr--r--: A regular file whose user class has read/write/execute, group class has only read permissions, other class has only read permissions
+drw-rw-r--: A directory whose user class has read/write permissions, group class has read/write permissions, other class has only read permissions
+
+notacja oktalna
+
+The read bit (r in symbolic notation) adds 4 to its total
+The write bit (w in symbolic notation) adds 2 to its total
+The execute bit (x in symbolic notation) adds 1 to its total
+
+Symbolic notation	Octal notation	Plain English
+-rwxr--r--	0744	user class can read/write/execute; group class can read; other class can read
+-rw-rw-r--	0664	user class can read/write; group class can read/write; other class can read
+-rwxrwxr--	0774	user class can read/write/execute; group class can read/write/execute; other class can read
+----------	0000	None of the classes have permissions
+-rwx------	0700	user class can read/write/execute; group class has no permissions; other class has no permissions
+-rwxrwxrwx	0777	All classes can read/write/execute
+-rw-rw-rw	0666	All classes can read/write
+-r-xr-xr-x	0555	All classes can read/execute
+-r--r--r--	0444	All classes can read
+--wx-wx-wx	0333	All classes can write/execute
+--w--w--w-	0222	All classes can write
+---x--x--x	0111	All classes can execute
+
+chmod 755 <file>		zmiana uprawnień pliku 
+
+chmod -R 600 <directory>	zmiana uprawnień katalogu i jego zawartości!
+
+chown <user>:<group> <file>	zmiana właściciela. User oraz grupa. Każdy plik ma jednego użytkownika właściciela oraz jedną grupę właścicieli.
+
+

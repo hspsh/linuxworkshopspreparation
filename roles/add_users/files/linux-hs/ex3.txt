@@ -1,0 +1,13 @@
+ps aux
+
+sleep 10000 &
+
+ps aux | grep #pid
+
+jobs
+
+fg
+
+ctr-c
+
+

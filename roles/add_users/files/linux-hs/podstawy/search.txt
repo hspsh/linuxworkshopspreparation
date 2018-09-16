@@ -1,0 +1,8 @@
+# SEARCH
+
+find <dir> -name "<file>"		wyszukaj wszystkie pliki z nazwą x w danym katalogu
+
+grep "<text>" <file>			wyświetl wszystkie wystąpienia textu w pliku
+grep "<text>" -i <file> 		to co powyżej, ale nie zwracaj uwagi na wielkość znaków
+
+grep -rl "<text>" <dir>			szukaj wszystkich plików zawierających text w katalogu

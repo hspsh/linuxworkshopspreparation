@@ -1,0 +1,13 @@
+# NETWORK
+
+ping <host>		spinguj
+
+whois <domain>		wyświetl informacje z bazy whois o domenie
+
+curl -O <url/to/file>	pobierz plik poprzez HTTP[S] albo FTP
+
+ssh <username>@<host>	dokonaj połączenia ssh
+
+scp <file> <user>@<host>:/remote/path	skopiuj plik file do innej maszyny w katalogu /remote/path
+
+
